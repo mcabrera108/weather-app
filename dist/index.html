@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="content">
+        <div class="display-container">
+            <div class="location-container">
+                <div class="condition-container"></div>
+                <div class="region-container"></div>
+                <div class="date-container"></div>
+                <div class="temperature-container"></div>
+                <div class="cf-container"></div>
+                <div class="condition-icon-container"></div>
+                <div class="location-form">
+                    <form id="locationForm">
+                        <input type="text" placeholder=" Search Location Here..." id="location">
+                        <button type="submit" class="location-submit-btn"><i class="fa fa-search fa-sm"></i></button>
+                    </form>
+                    <div class="invalid-container"></div>
+                </div>
+            </div>
+            <div class="temperature-container">
+                <div class="feel-container">
+                    <div class="degree-sub-container">Feels Like</div>
+                    <div class="degree-container"></div>
+                </div>
+                <div class="humidity-container">
+                    <div class="humidity-sub-container">Humidity</div>
+                    <div class="humidity-percent-container"></div>
+                </div>
+                <div class="wind-speed-container">
+                    <div class="wind-sub-container">Wind Speed</div>
+                    <div class="wind-speed"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

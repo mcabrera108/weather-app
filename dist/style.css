@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --default-font-color: white;
+}
+::placeholder {
+    color: var(--default-font-color);
+    opacity: 1;
+}
+body {
+    min-height: 100vh;
+    background-image: url(../img/sea.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+#content {
+    margin: 70px;
+}
+#location {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid var(--default-font-color);
+    font-size: 1rem;
+    color: var(--default-font-color);
+    background: none;
+}
+#location:focus {
+    outline: none;
+    background: none;
+}
+#locationForm {
+    display: flex;
+}
+.display-container {
+    display: flex;
+    justify-content: space-between;
+}
+.toggle-container {
+    display: flex;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+}
+.forecast-toggle-btn {
+    font-size: 1.3rem;
+    background: none;
+    color: var(--default-font-color);
+    padding: 3px 10px 3px 10px;
+    border: none;
+}
+.forecast-toggle-btn.active {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.location-submit-btn {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: none;
+    padding-right: 5px;
+    border-bottom: 2px solid var(--default-font-color);
+    color: var(--default-font-color);
+}
+.location-submit-btn:hover {
+    cursor: pointer;
+}
+.region-container,.condition-container,.date-container,.temperature-container,.cf-container,.invalid-container,.condition-icon-container {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--default-font-color);
+    padding-bottom: 15px;
+}
+.feel-container {
+    display: flex;
+}
+.location-form {
+    margin-bottom: 15px;
+}
+.fa-thermometer-three-quarters {
+    padding-right: 10px;
+}
+.invalid-container {
+    font-size: .6rem;
+}
+.cf-container {
+    font-size: .8rem;
+}
+.cf-container:hover {
+    cursor: pointer;
+}
+.location-container {
+    display: flex;
+    flex-direction: column;
+}
+.temperature-container {
+    display: flex;
+    flex-direction: column;
+}
+.condition-container {
+    font-size: 2rem;
+}
+.region-container {
+    font-size: 1.3rem;
+}
+.date-container {
+    font-size: .9rem;
+}
+.degree-sub-container,.humidity-sub-container,.wind-sub-container {
+    font-size: 1rem;
+}
+.feel-container,.humidity-container,.wind-speed-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 420px){
+    #content {
+        margin: 40px;
+    }
+    .display-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .location-container,.temperature-container {
+        align-items: center;
+    }
+    .degree-container,.humidity-percent-container,.wind-speed {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
